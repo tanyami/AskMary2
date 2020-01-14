@@ -15,7 +15,6 @@ body {
 }
 .grid {
 	max-width: 1011px;
-	max-height: 381px;
 	margin: auto;
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr;
@@ -48,7 +47,7 @@ h1 {
 }
 .grid__box ul {
 	position: relative;
-	margin-bottom: 28px;
+	margin-bottom: 38px;
 	list-style: none;
 }
 .grid__box_flower ul li {
@@ -76,7 +75,10 @@ h1 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 .grid__box_button {
-	
+	display: flex;
+	display: -webkit-flex;
+	display:-ms-flexbox;
+	justify-content: center;
 }
 .grid__box_button button {
 	font-size: 0.875rem;
@@ -90,17 +92,7 @@ h1 {
 	padding: : 14px 27px 10px 25px;
 	font-family: 'Josefin Sans', sans-serif;
 	border-width: 0px;
-}
-.grid__box_button .left{ 
-	color: #333333;	
-	
-}
-.grid__box_button .right{ 
-	color: #2DCC70;	
-}
-input::placeholder {
-  color: #000;
-  font-size: 1.25rem;
+	color: #333333;
 }
 hr {
 	width: 228px;
@@ -109,59 +101,33 @@ hr {
 	border: none;
 	margin-bottom: 16px;
 }
-.grid__box_item {
-	font-size: 0.875rem;
-	background: #fff;
-	height: 381px;
-		
-}	
  h2 {
 	font-size: 0.875rem;
 	font-weight: 700;
 	color: #000;
 	margin: 0 0 17px 0px;
  }
-.grid__box_item1, .grid__box_item2 {
+.grid__box_item {
 	color: #000;
 	width: 173px;
 	font-size: 0.875rem;
 	font-weight: 400;
 	background: #fff;
 	padding:30px 0px 22px 25px;
-	background: #FFFFFF;
 	border: 1px solid #DADADA;
 	box-sizing: border-box;
 	border-radius: 5px;
 	line-height: 24px;
 }
-@media (min-width:797px) and (max-width:1010px){
-.grid {
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 25px;
-	max-width: 797px;
-	margin: auto;
-}
-.grid__box_flower {
-	margin-top: 0;
-}
+.grid__box_item ul {
+	margin-bottom: 0px;
 }
 @media (max-width:796px){
 .grid {
+	max-width: 371px;
 	grid-template-columns: 1fr;
-	grid-template-row: 2fr;
-	max-width: 370px;
-	margin: auto; 
 }
-.grid__box_button button {
-	width: 136px;	
-}
-}
-.grid__box_button > button+button {
-	margin-left: 19px;
-}
-}
-@media (max-width:360px){
-.grid__box_button button {
-	width: 116px;	
-}
+.grid__box_flower {
+	margin-top: 0;
+}	
 }
